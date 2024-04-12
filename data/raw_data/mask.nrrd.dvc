@@ -1,0 +1,5 @@
+outs:
+- md5: b2d65e65bb7a2510849741df8497e9a1
+  size: 87327
+  hash: md5
+  path: mask.nrrd
