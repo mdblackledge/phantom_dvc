@@ -1,0 +1,4 @@
+[core]
+    remote = rds_storage
+['remote "rds_storage"']
+    url = /Volumes/DATA/DRI/UCCI/COMPIMAG/mblackledge/test_phantom_dvc
