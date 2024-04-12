@@ -1,0 +1,23 @@
+schema: '2.0'
+stages:
+  preprocessing:
+    cmd: export PYTHONPATH=$PWD && python dvc_stages/preprocessing.py data/raw_data
+      data/processed_data
+    deps:
+    - path: data/raw_data/mask.nrrd
+      hash: md5
+      md5: b2d65e65bb7a2510849741df8497e9a1
+      size: 87327
+    - path: data/raw_data/phantom.nrrd
+      hash: md5
+      md5: e6e1e6426459afe033897daace4fd3ff
+      size: 3422805
+    outs:
+    - path: data/processed_data/mask.npy
+      hash: md5
+      md5: 2dfd061bc5e6e684706164ed27c05e10
+      size: 8192128
+    - path: data/processed_data/phantom.npy
+      hash: md5
+      md5: f1f4cdf8b6a2cfd21a2dea1eefeefb19
+      size: 8192128

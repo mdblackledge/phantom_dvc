@@ -1,0 +1,9 @@
+stages:
+  preprocessing:
+    cmd: export PYTHONPATH=$PWD && python dvc_stages/preprocessing.py data/raw_data data/processed_data
+    deps:
+      - data/raw_data/mask.nrrd
+      - data/raw_data/phantom.nrrd
+    outs:
+      - data/processed_data/mask.npy
+      - data/processed_data/phantom.npy
